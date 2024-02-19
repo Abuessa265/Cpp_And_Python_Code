@@ -30,11 +30,11 @@ cout<<endl;
 
   // lower_bound
   auto a = mp.lower_bound(10); // jodi key ta map er modde thake tahole oi key & value print korbe ar jodi key na thake kintu key er ceye boro key thake tahole boro ta print korbe ar jodi key er caye boro key na thake tahole garvage value print korbe
-  cout << "The lower bound key and value is :" << (*a).first << " " << (*a).second << endl;
+  cout << "The lower bound key and value is : " << (*a).first << " " << (*a).second << endl;
 
   // upper bound
   auto b = mp.upper_bound(3);
-  cout << "The upper bound key and value is :" << (*b).first << " " << (*b).second << endl;
+  cout << "The upper bound key and value is : " << (*b).first << " " << (*b).second << endl;
 
   // find function
   auto x = mp.find(2); // 2 is key
