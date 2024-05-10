@@ -6,7 +6,10 @@ int main()
   valarray<int> varr = {10, 2, 20, 1, 30};
   valarray<int> varr1;
   varr1 = varr.apply([](int x)
-                     { return x = x + 5; });
+  { 
+    return x = x + 5; 
+  }
+  );
   cout << "The new valarray is : ";
   for (auto i : varr1)
   {

@@ -15,6 +15,7 @@ int main()
 
   cout << v[2] << endl;
   cout << v.at(3) << endl;
+  cout<<"The value is : "<<v[11]<<endl;
   // cout<<v[20]; its not avilable in this vector thats why its give garvage value
   //  cout << v.at(22); its out of range that whay its show that its out  of range
 
@@ -50,12 +51,13 @@ int main()
   }
   cout << endl;
 
-  // v.erase(v.begin() + 2, v.end());
-  // for (int i = 0; i < v.size(); i++)
-  // {
-  //   cout << v[i] << " ";
-  // }
-  // cout << endl;
+  cout<<"Erase  to last position "<<endl;
+  v.erase(v.begin() + 3, v.end());
+  for (int i = 0; i < v.size(); i++)
+  {
+    cout << v[i] << " ";
+  }
+  cout << endl;
 
   v.insert(v.begin(), 99);
   for (int i = 0; i < v.size(); i++)
@@ -71,7 +73,7 @@ int main()
   }
   cout << endl;
 
-  v.insert(v.begin() + 1, 3, 1);
+  v.insert(v.begin() + 1, 3, 2);
   for (int i = 0; i < v.size(); i++)
   {
     cout << v[i] << " ";
@@ -82,6 +84,7 @@ int main()
   v1.push_back(101);
   v1.push_back(102);
   v1.push_back(103);
+  v1.push_back(104);
 
   swap(v, v1);
   cout << "After swaping" << endl;
