@@ -65,7 +65,7 @@ int main()
        << "Double value is = " << n2 << endl;
 
   // recursion
-  int result = rec(10);
+  int result = rec(5);
   cout << result << endl;
   return 0;
 }

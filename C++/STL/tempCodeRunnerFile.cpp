@@ -1,2 +1,1 @@
-
-   cout<<"Enter your name : "<<gets(name);
+43861
